@@ -2,12 +2,14 @@ package com.org.yogi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-public class ChangestreamappApplication {
+@EnableMongoRepositories
+public class ChangestreamApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChangestreamappApplication.class, args);
+		SpringApplication.run(ChangestreamApplication.class, args);
 	}
 
 }
